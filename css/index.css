@@ -1,0 +1,91 @@
+html{
+    background-color: #333333;
+    margin: 0 10px;
+}
+
+body{
+    border-radius: 50px;
+    align-self: center;
+}
+
+header{
+    background-color: #333333;
+    padding: 10px 0 40px 0;
+    border-radius: 50px;
+}
+
+header * {
+    padding-bottom: 10px;
+}
+
+main{
+    background-color: #444444;
+    border: 1px solid #fffff0;
+    padding: 50px 0px;
+    border-radius: 50px;
+}
+
+.cards{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+}
+
+.card{
+    max-width: 200px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1px solid #fffff0;
+    box-shadow: 0 0 5px #fffff0;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #fffff0;
+}
+
+.card:active{
+    transform: scale(0.99);
+    box-shadow: none;
+    transition: all 0s;
+}
+
+.img {
+    padding-top: 60%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffffff;
+}
+
+.img img{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{
+    margin: 5px 15px 15px 15px;
+    color: #fffff0;
+}
+
+#cards .card{
+    width: 200px;
+    height: 200px;
+}    
+
+@media (min-width: 1000px){
+    html{
+        margin: 20px 15% 30px 15%;
+    }
+}
