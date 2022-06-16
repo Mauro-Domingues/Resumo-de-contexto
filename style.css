@@ -6,6 +6,7 @@ body {
     font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    text-align: center;
 }
 
 a{
