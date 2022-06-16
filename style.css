@@ -7,8 +7,31 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-align: center;
+    background-color: #333333;
+    color: #fffff0;
+    margin: 20px 10px 30px 10px;
 }
 
 a{
     text-decoration: none;
+}
+
+b{
+    font-size: 1.1rem;
+}
+
+b.untracked{
+    color: #ff0000;
+}
+
+b.unmodified{
+    color: #995999;
+}
+
+b.modified{
+    color: #ffe000;
+}
+
+b.staged{
+    color: #00fd00;
 }
