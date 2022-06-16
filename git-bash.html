@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git bash - Recursos importantes</title>
+    <link rel="icon" type="image/x-icon" href="https://e7.pngegg.com/pngimages/743/345/png-clipart-bash-git-computer-icons-installation-command-line-interface-github-text-logo.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <a href="./index.html"><input type="button" value="Página inicial"></a>
+    <h2>Configuração geral do git bash</h2>
+    <p><b>Git config –global user.name "Mauro-Domingues"</b> (Configura o nome do usuário/autor dos commits)</p>
+    <p><b>Git config –global user.email "rafael.ribeiro@startse.com"</b> (Configura o email do usuário/autor dos commits)</p>
+    <p><b>Git config --global init.defaultBranch main</b> (Configura a branch principal como main)</p>
+    <h2>Fases de vida do arquivo</h2>
+    <p><b class="untracked">Untracked</b> o git ainda não conhece a existência do arquivo em nenhuma versão</p>
+    <p><b class="unmodified">Unmodified</b> ficam os arquivos que não sofreram nenhuma alteração em relação à última versão</p>
+    <p><b class="modified">Modified</b> ficam os arquivos que sofreram alteração em relação à última versão</p>
+    <p><b class="staged">Staged</b> ficam os arquivos que estão prontos para serem inseridos na nova versão</p>
+    <h2>Comandos do git bash no projeto</h2>
+    <p><b>Git status</b> = Para consultar o status dos arquivos</p>
+    <p><b>Git log</b> = Para consultar commits</p>
+    <p><b>Git commit -m</b> = O commit é utilizado para avisar o git que queremos gerar um novo estado com os arquivos em staged</p>
+    <p><b>Git branch</b> = Para criar uma nova branch</p>
+    <p><b>Git checkout</b> = Para alterar de branch</p>
+    <p><b>Git merge</b> = Para unir duas branches mais recentes</p>
+    <p><b>Git rebase</b> = Para pegar todas as alterações que foram confirmadas em um branch e reproduzi-las em outro</p>
+    <p><b>--continue</b> = Às vezes, durante um processo de rebase do Git, você pode encontrar alguns conflitos de fusão e o Git pede que você resolva os conflitos para avançar com a rebaseação/mesclagem, depois de resolver os conflitos e seguir em frente</p>
+    <p><b>Git log --graph</b> = Para consultar commits visualizando as ramificações</p>
+    <p><b>Git checkout</b> = Para alterar de branch/Para voltar o arquivo para antes da edição</p>
+    <p><b>Git diff</b> = Para ver as modificações em um arquivo</p>
+    <p><b>Git reset HEAD</b> = Para voltar arquivos staged para modified</p>
+    <h4>Para voltar arquivos que já estão em um commit utilizamos o comando</h4>
+    <p><b>Git reset --soft</b> = Volta ao commit anterior mantendo as alterações em staged</p>
+    <p><b>Git reset --mixed</b> = Volta ao commit anterior mantendo as alterações em modified</p>
+    <p><b>Git reset --hard</b> = Volta ao commit anterior removendo todas as alterações do commit</p>
+    <p><b>Git remote add origin</b> = Para adicionar um repositório remoto</p>
+    <p><b>Git clone</b> = Para clonar um repositório remoto</p>
+    <p><b>Git push origin main</b> = Para enviar o código para o repositório remoto</p>
+    <p><b>Git pull origin main</b> = Para obter as modificações de um repositório remoto</p>
+    <p><b>Git stash --include</b> = Para armazenar uma alteração temporária</p>
+    <p><b>Git stash apply</b> = Para aplicar uma alteração temporária</p>
+    <p><b>Git stash list</b> = Para listar alterações temporárias</p>
+    <p><b>Git stash clear</b> = Para limpar uma alteração temporária</p>
+    <p><b>.gitignore</b> = Para ignorar um arquivo que você não queira enviar para o repositório remoto</p>
+    <p><b>Git revert</b> = Para desfazer um commit mantendo o histórico</p>
+    <h4>Workflow é um termo inglês que significa fluxo de trabalho</h4>
+    <p><b>Centralized Workflow</b> = Todos os desenvolvedores trabalham na branch main</p>
+    <p><b>Centralized Workflow</b> = Todos os desenvolvedores trabalham na branch main</p>
+    <p><b>Feature Branch Workflow</b> = Todos os desenvolvedores trabalham com novos recursos utilizando uma nova branch</p>
+    <p><b>Gitflow Workflow</b> = Todos os desenvolvedores trabalham com um modelo estrito de branches projetado em torno do lançamento do projeto</p>
+</body>
+
+</html>
