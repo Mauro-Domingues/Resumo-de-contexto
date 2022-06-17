@@ -83,6 +83,11 @@ main{
 }
 
 @media (max-width: 631px){
+    html{
+        max-width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     .cards{
         display: flex;
         flex-direction: column;
