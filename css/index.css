@@ -1,9 +1,5 @@
-html{
-    background-color: #333333;
-    margin: 0 10px;
-}
-
 body{
+    margin-top: 20px;
     border-radius: 50px;
     align-self: center;
 }
@@ -32,6 +28,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
+    padding-left: auto;
 }
 
 .card{
@@ -78,14 +75,17 @@ main{
     margin: 5px 15px 15px 15px;
     color: #fffff0;
 }
-
-#cards .card{
-    width: 200px;
-    height: 200px;
-}    
-
+    
 @media (min-width: 1000px){
     html{
         margin: 20px 15% 30px 15%;
+    }
+}
+
+@media (max-width: 631px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
