@@ -1,12 +1,12 @@
-body{
+body {
     margin-top: 20px;
     border-radius: 50px;
     align-self: center;
 }
 
-header{
+header {
     background-color: #333333;
-    padding: 10px 0 40px 0;
+    padding: 10px 0 20px 0;
     border-radius: 50px;
 }
 
@@ -14,14 +14,14 @@ header * {
     padding-bottom: 10px;
 }
 
-main{
+main {
     background-color: #444444;
     border: 1px solid #fffff0;
     padding: 50px 0px;
     border-radius: 50px;
 }
 
-.cards{
+.cards {
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -31,7 +31,7 @@ main{
     padding-left: auto;
 }
 
-.card{
+.card {
     height: 200px;
     width: 200px;
     display: flex;
@@ -44,12 +44,12 @@ main{
     background-color: #333333;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px #fffff0;
 }
 
-.card:active{
+.card:active {
     transform: scale(0.99);
     box-shadow: none;
     transition: all 0s;
@@ -63,7 +63,7 @@ main{
     background-color: #ffffff;
 }
 
-.img img{
+.img img {
     position: absolute;
     border-radius: 10px;
     top: 50%;
@@ -71,24 +71,24 @@ main{
     transform: translate(-50%, -50%);
 }
 
-.content{
+.content {
     margin: 5px 15px 15px 15px;
     color: #fffff0;
 }
-    
-@media (min-width: 1000px){
-    html{
+
+@media (min-width: 1000px) {
+    html {
         margin: 20px 15% 30px 15%;
     }
 }
 
-@media (max-width: 631px){
-    html{
+@media (max-width: 631px) {
+    html {
         max-width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 5%;
     }
-    .cards{
+
+    .cards {
         display: flex;
         flex-direction: column;
         align-items: center;
