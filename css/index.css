@@ -1,12 +1,7 @@
-html {
-    max-width: 90%;
-    padding: 5%;
-}
-
 body {
     margin-top: 20px;
     border-radius: 50px;
-    text-align: center;
+    align-self: center;
 }
 
 header {
@@ -22,37 +17,24 @@ header * {
 main {
     background-color: #444444;
     border: 1px solid #fffff0;
-    padding: 50px 0;
+    padding: 50px 0px;
     border-radius: 50px;
-    width: 90%;
-    margin: 0 5%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
 }
 
 .cards {
     width: 90%;
+    max-width: 1000px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: min-content;
-    grid-gap: 5%;
-    justify-content: center;
-
-}
-
-a {
-    padding: 0;
-    margin: auto;
-    height: 200px;
-    width: 200px;
+    grid-gap: 40px;
+    padding-left: auto;
 }
 
 .card {
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
     display: flex;
-    position: relative;
     flex-direction: column;
     cursor: pointer;
     border: 1px solid #fffff0;
@@ -95,32 +77,20 @@ a {
 }
 
 @media (min-width: 1000px) {
-
-    .cards {
-        grid-template-columns: repeat(minmax(200px, 1fr));
+    html {
+        margin: 20px 15% 30px 15%;
     }
-
 }
 
 @media (max-width: 631px) {
+    html {
+        max-width: 90%;
+        padding: 5%;
+    }
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
-    a {
-        width: 100px;
-        height: 100px;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .content {
-        font-size: 0.5rem;
-        margin: 2.5px 7.5px 7.5px 7.5px;
-    }
-
 }
