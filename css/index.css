@@ -15,9 +15,10 @@ header * {
 }
 
 main {
+    position: relative;
     background-color: #444444;
     border: 1px solid #fffff0;
-    padding: 50px 0px;
+    padding: 5vh 0 13vh 0;
     border-radius: 50px;
 }
 
@@ -27,8 +28,9 @@ main {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 40px;
-    padding-left: auto;
+    grid-template-rows: min-content;
+    grid-gap: 5%;
+    justify-content: center;
 }
 
 .card {
