@@ -1,13 +1,26 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+html,
+body {
+    font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    background-color: #333333;
+    color: #fffff0;
+    margin: 0;
     max-width: 90%;
-    padding: 5%;
+    padding: 0 5% 2% 5%;
+}
+
+html {
+    display: flex;
+    justify-content: center;
 }
 
 body {
-    margin-top: 20px;
-    border-radius: 50px;
+    max-width: 1000px;
 }
-
 
 header {
     background-color: #333333;
@@ -26,8 +39,6 @@ main {
     border-radius: 30px;
     width: 90%;
     margin: 0 5%;
-    max-width: 1000px;
-
 }
 
 .cards {
@@ -35,7 +46,8 @@ main {
     margin: 0 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5%;
+    row-gap: 50px;
+    column-gap: 50px;
     justify-content: center;
 }
 
@@ -96,8 +108,9 @@ a {
 @media (max-width: 631px) {
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        row-gap: 25px;
+        column-gap: 25px;
     }
 
     a {
