@@ -52,6 +52,7 @@ main {
 }
 
 a {
+    text-decoration: none;
     padding: 0;
     margin: auto;
     height: 200px;
