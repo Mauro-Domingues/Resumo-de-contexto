@@ -47,3 +47,10 @@ input#main-button:active{
     font-size: 1.2rem;
     box-shadow: none;
 }
+
+@media (max-width: 630px){
+    html,
+    body {
+    margin: 10px 10px 15px 10px;
+    }
+}
