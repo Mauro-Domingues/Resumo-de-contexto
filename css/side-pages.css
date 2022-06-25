@@ -21,7 +21,10 @@ b{
 }
 
 input#main-button{
-    width: 150px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 35px;
     height: 35px;
     margin: 10px 0 10px 0;
     color: #222222;
@@ -29,23 +32,18 @@ input#main-button{
     font-weight: 700;
     background-color: #fffff0;
     border: 2px solid #333333;
+    border-radius: 50px;
     box-shadow: 0 0 3px #fffff0;
     cursor: pointer;
+    transform: scaleX(-1);
 }
 
 input#main-button:hover{
-    width: 152px;
-    height: 37px;
-    margin: 9px 0 9px 0;
-    font-size: 1.21rem;
-    box-shadow: 0 0 5px #fffff0;
+    transform: scale(-1.1, 1.1);
 }
 
 input#main-button:active{
-    width: 150px;
-    height: 35px;
-    margin: 10px 0 10px 0;
-    font-size: 1.2rem;
+    transform: scale(-1, 1);
     box-shadow: none;
 }
 
