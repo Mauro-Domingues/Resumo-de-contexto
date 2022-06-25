@@ -11,6 +11,7 @@ body {
     margin: 0;
     max-width: 90%;
     padding: 0 5% 2% 5%;
+    cursor: default;
 }
 
 html {
@@ -43,7 +44,7 @@ main {
 
 .cards {
     width: 90%;
-    margin: 0 5%;
+    margin: 5px 5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px;
@@ -83,15 +84,16 @@ a {
     transition: all 0s;
 }
 
-.img {
-    padding-top: 60%;
+figure {
+    margin: 0;
+    padding: 60% 0 0 0;
     overflow: hidden;
     position: relative;
     border-radius: 10px 10px 0 0;
     background-color: #ffffff;
 }
 
-.img img {
+figure img {
     position: absolute;
     border-radius: 10px;
     top: 50%;
