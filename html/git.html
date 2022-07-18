@@ -18,50 +18,50 @@
     </nav>
     <main>
         <h2>O que é Git?</h2>
-        <p><b>Git</b> é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo</p>
+        <p><strong>Git</strong> é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo</p>
         <h2>Recomendação de instalação:</h2>
         <h3>Instalar o <a href="https://git-scm.com/downloads">Git-bash</a></h3>
         <h2>Configurações gerais do git bash</h2>
-        <p><b>Git config –global user.name "SeuNome"</b> (Configura o nome do usuário/autor dos commits)</p>
-        <p><b>Git config –global user.email "SeuEmail"</b> (Configura o email do usuário/autor dos commits)</p>
-        <p><b>Git config --global init.defaultBranch main</b> (Configura a branch principal como main)</p>
+        <p><strong>Git config –global user.name "SeuNome"</strong> (Configura o nome do usuário/autor dos commits)</p>
+        <p><strong>Git config –global user.email "SeuEmail"</strong> (Configura o email do usuário/autor dos commits)</p>
+        <p><strong>Git config --global init.defaultBranch main</strong> (Configura a branch principal como main)</p>
         <h2>Fases de vida do arquivo</h2>
-        <p><b style="color: #ff0000">Untracked</b> o git ainda não conhece a existência do arquivo em nenhuma versão</p>
-        <p><b style="color: #995999">Unmodified</b> ficam os arquivos que não sofreram nenhuma alteração em relação à última versão</p>
-        <p><b style="color: #ffe000">Modified</b> ficam os arquivos que sofreram alteração em relação à última versão</p>
-        <p><b style="color: #00fd00">Staged</b> ficam os arquivos que estão prontos para serem inseridos na nova versão</p>
+        <p><strong style="color: #ff0000">Untracked</strong> o git ainda não conhece a existência do arquivo em nenhuma versão</p>
+        <p><strong style="color: #995999">Unmodified</strong> ficam os arquivos que não sofreram nenhuma alteração em relação à última versão</p>
+        <p><strong style="color: #ffe000">Modified</strong> ficam os arquivos que sofreram alteração em relação à última versão</p>
+        <p><strong style="color: #00fd00">Staged</strong> ficam os arquivos que estão prontos para serem inseridos na nova versão</p>
         <h2>Comandos do git bash no projeto</h2>
-        <p><b>Git status</b> = Para consultar o status dos arquivos</p>
-        <p><b>Git log</b> = Para consultar commits</p>
-        <p><b>Git add</b> = Realiza a inclusão ou modificação do arquivo no diretório local</p>
-        <p><b>Git commit -m</b> = O commit é utilizado para avisar o git que queremos gerar um novo estado com os arquivos em staged</p>
-        <p><b>Git branch</b> = Para criar uma nova branch</p>
-        <p><b>Git checkout</b> = Para alterar de branch</p>
-        <p><b>Git merge</b> = Para unir duas branches mais recentes</p>
-        <p><b>Git rebase</b> = Para pegar todas as alterações que foram confirmadas em um branch e reproduzi-las em outra</p>
-        <p><b>--continue</b> = Às vezes, durante um processo de rebase do Git, você pode encontrar alguns conflitos de fusão e o Git pede que você resolva os conflitos para avançar com a rebaseação/mesclagem</p>
-        <p><b>Git log --graph</b> = Para consultar commits visualizando as ramificações</p>
-        <p><b>Git checkout</b> = Para alterar de branch/Para voltar o arquivo para antes da edição</p>
-        <p><b>Git diff</b> = Para ver as modificações em um arquivo</p>
-        <p><b>Git reset HEAD</b> = Para voltar arquivos staged para modified</p>
-        <p><b>Git reset --soft</b> = Volta ao commit anterior mantendo as alterações em staged</p>
-        <p><b>Git reset --mixed</b> = Volta ao commit anterior mantendo as alterações em modified</p>
-        <p><b>Git reset --hard</b> = Volta ao commit anterior removendo todas as alterações do commit</p>
-        <p><b>Git commit --amend</b> = Permite que você combine mudanças em staged com o commit anterior ao invés de criar um novo commit</p>
-        <p><b>Git remote add origin</b> = Para adicionar um repositório remoto</p>
-        <p><b>Git clone</b> = Para clonar um repositório remoto</p>
-        <p><b>Git push origin main</b> = Para enviar o código para o repositório remoto</p>
-        <p><b>Git pull origin main</b> = Para obter as modificações de um repositório remoto</p>
-        <p><b>Git stash --include</b> = Para armazenar uma alteração temporária</p>
-        <p><b>Git stash apply</b> = Para aplicar uma alteração temporária</p>
-        <p><b>Git stash list</b> = Para listar alterações temporárias</p>
-        <p><b>Git stash clear</b> = Para limpar uma alteração temporária</p>
-        <p><b>.gitignore</b> = Arquivos dentro de um documento .gitignore são ignorados ao fazer upload em um repositório remoto.</p>
-        <p><b>Git revert</b> = Para desfazer um commit mantendo o histórico</p>
+        <p><strong>Git status</strong> = Para consultar o status dos arquivos</p>
+        <p><strong>Git log</strong> = Para consultar commits</p>
+        <p><strong>Git add</strong> = Realiza a inclusão ou modificação do arquivo no diretório local</p>
+        <p><strong>Git commit -m</strong> = O commit é utilizado para avisar o git que queremos gerar um novo estado com os arquivos em staged</p>
+        <p><strong>Git branch</strong> = Para criar uma nova branch</p>
+        <p><strong>Git checkout</strong> = Para alterar de branch</p>
+        <p><strong>Git merge</strong> = Para unir duas branches mais recentes</p>
+        <p><strong>Git rebase</strong> = Para pegar todas as alterações que foram confirmadas em um branch e reproduzi-las em outra</p>
+        <p><strong>--continue</strong> = Às vezes, durante um processo de rebase do Git, você pode encontrar alguns conflitos de fusão e o Git pede que você resolva os conflitos para avançar com a rebaseação/mesclagem</p>
+        <p><strong>Git log --graph</strong> = Para consultar commits visualizando as ramificações</p>
+        <p><strong>Git checkout</strong> = Para alterar de branch/Para voltar o arquivo para antes da edição</p>
+        <p><strong>Git diff</strong> = Para ver as modificações em um arquivo</p>
+        <p><strong>Git reset HEAD</strong> = Para voltar arquivos staged para modified</p>
+        <p><strong>Git reset --soft</strong> = Volta ao commit anterior mantendo as alterações em staged</p>
+        <p><strong>Git reset --mixed</strong> = Volta ao commit anterior mantendo as alterações em modified</p>
+        <p><strong>Git reset --hard</strong> = Volta ao commit anterior removendo todas as alterações do commit</p>
+        <p><strong>Git commit --amend</strong> = Permite que você combine mudanças em staged com o commit anterior ao invés de criar um novo commit</p>
+        <p><strong>Git remote add origin</strong> = Para adicionar um repositório remoto</p>
+        <p><strong>Git clone</strong> = Para clonar um repositório remoto</p>
+        <p><strong>Git push origin main</strong> = Para enviar o código para o repositório remoto</p>
+        <p><strong>Git pull origin main</strong> = Para obter as modificações de um repositório remoto</p>
+        <p><strong>Git stash --include</strong> = Para armazenar uma alteração temporária</p>
+        <p><strong>Git stash apply</strong> = Para aplicar uma alteração temporária</p>
+        <p><strong>Git stash list</strong> = Para listar alterações temporárias</p>
+        <p><strong>Git stash clear</strong> = Para limpar uma alteração temporária</p>
+        <p><strong>.gitignore</strong> = Arquivos dentro de um documento .gitignore são ignorados ao fazer upload em um repositório remoto.</p>
+        <p><strong>Git revert</strong> = Para desfazer um commit mantendo o histórico</p>
         <h2>Workflow é um termo inglês que significa fluxo de trabalho</h2>
-        <p><b>Centralized Workflow</b> = Todos os desenvolvedores trabalham na branch main</p>
-        <p><b>Feature Branch Workflow</b> = Todos os desenvolvedores trabalham com novos recursos utilizando uma nova branch</p>
-        <p><b>Gitflow Workflow</b> = Todos os desenvolvedores trabalham com um modelo estrito de branches projetado em torno do lançamento do projeto</p>
+        <p><strong>Centralized Workflow</strong> = Todos os desenvolvedores trabalham na branch main</p>
+        <p><strong>Feature Branch Workflow</strong> = Todos os desenvolvedores trabalham com novos recursos utilizando uma nova branch</p>
+        <p><strong>Gitflow Workflow</strong> = Todos os desenvolvedores trabalham com um modelo estrito de branches projetado em torno do lançamento do projeto</p>
     </main>
 </body>
 
