@@ -139,4 +139,12 @@ figure img {
         width: 90px;
     }
 
+    img.node-js{
+        width: 50px;
+    }
+
+    .my-sql{
+        width: 95px;
+    }
+
 }
