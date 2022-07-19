@@ -28,7 +28,7 @@
         <p><strong>&ltbody&gt &ltbody/&gt</strong> = Tag usada para definir o corpo do documento. Dentro dela serão colocadas as tags que irão compor a nossa página e deve ser utilizada dentro da tag html</p>
         <p>Todos os elementos podem receber classes e IDs com class="" e id="" dentro da tag de abertura</p>
         <h2>Principais aplicações dentro do head</h2>   
-        <p><strong>&ltmeta charset/&gt</strong> = Utilizado para definir a linguagem de codificação da página</p>
+        <p><strong>&ltmeta charset=""/&gt</strong> = Utilizado para definir a linguagem de codificação da página, o padrão utilizado por nós é UTF-8</p>
         <p><strong>&ltmeta http-equiv="X-UA-Compatible" content="IE-edge"/&gt</strong> = Utilizada para configurar a página para ser renderizada em outra versão do Internet Explorer, o valor IE=edge vai forçar o navegador renderizar com a mais recente</p>
         <p><strong>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"/&gt</strong> = Utilizada para fazer o site ocupar todo o espaço disponível na janela, seja em celulares, tablets ou PC's</p>
         <p><strong>&lttitle&gt &lt/title&gt</strong> = Utilizado para definir o título da página</p>
@@ -40,7 +40,7 @@
         <p><strong>&ltp&gt &lt/p&gt</strong> = Utilizado para criar um parágrafo na página</p>
         <p><strong>&lta href="caminho"&gt &lt/a&gt</strong> = Utilizado para criar um link de redirecionamento. Pode ser inserido o atributo target=“_blank” para fazer o link abrir em uma nova guia</p>
         <p><strong>&ltbutton&gt &lt/button&gt</strong> = Utilizado para criar um botão, pode ser atribuído uma função com o atributo type="" dentro da tag de abertura</p>
-        <p><strong>&lt!-- comentário --&gt</strong> = Utilizada para adicionar um comentário que não será interpretado e nem renderizado pelo codigo</p>
+        <p><strong>&lt!-- comentário --&gt</strong> = Utilizada para adicionar um comentário que não será interpretado e nem renderizado pelo código</p>
         <h3>Aplicações de detalhes</h3>
         <p><strong>&ltb&gt &lt/b&gt</strong> = Utilizado para criar um texto em <strong>negrito</strong></p>
         <p><strong>&ltstrong&gt &lt/strong&gt</strong> = Utilizado para criar um texto em <strong>negrito</strong> identificável por leitores visuais</p>
@@ -57,7 +57,8 @@
         <p><strong>&ltimg src="arquivo"/&gt</strong> = Utilizado para inserir imagens ao documento. Pode ser adicionado o elemento alt dentro da tag de abertura para especificar uma mensagem descritiva caso a imagem não carregue</p>
         <p><strong>&ltvideo src="arquivo"&gt &lt/video&gt</strong> = Utilizado para inserir vídeos ao documento. Pode ser inserido o atributo controls dentro da tag de abertura para adicionar uma barra de controle ao vídeo, alem de diversos outros recursos</p>
         <p><strong>&ltaudio&gt &lt/audio&gt</strong> = Utilizado para inserir áudios ao documento. Pode ser inserido o atributo autoplay na tag de abertura para reproduzir o áudio assim que a página for recarregada, alem de outros recursos</p>
-        <p><strong>&ltiframe&gt &lt/iframe&gt</strong> = Utilizado para incorporar outro documento à esse documento (um ótimo exemplo seria a incorporação de vídeos do youtube)</p>
+        <p><strong>&ltsource src="arquivo" type=""/&gt</strong> = Utilizado dentro da tag audio para definir a origem do arquivo</p>
+        <p><strong>&ltiframe src="caminho"&gt &lt/iframe&gt</strong> = Utilizado para incorporar outro documento à esse documento (um ótimo exemplo seria a incorporação de vídeos do youtube)</p>
         <h3>Aplicações de lista</h3>
         <p><strong>&ltul&gt &lt/ul&gt</strong> = Utilizada para criar uma lista não ordenada</p>
         <p><strong>&ltol&gt &lt/ol&gt</strong> = Utilizada para criar uma lista ordenada</p>
@@ -81,7 +82,7 @@
         <p><strong>&ltoption&gt &lt/option&gt</strong> = É usado para criar um controle que representa um item dentro de um elemento</p>
         <p><strong>&lttextarea&gt &lt/textarea&gt</strong> = É usada para definir um multi-linha de controle de entrada de texto, pode receber os atributos rows (linhas) e cols (colunas) para delimitar seu tamanho</p>
         <p><strong>&ltlabel for="ID"&gt &lt/label&gt</strong> = Utilizada para criar etiquetas aos inputs</p>
-        <p><strong>&ltinput type="tipo" name=""&gt &lt/input&gt</strong> = Utilizada para adicionar caixas diverentes funções, o seu tipo é definido dentro de type=""</p>
+        <p><strong>&ltinput type="tipo" name=""&gt &lt/input&gt</strong> = Utilizada para adicionar caixas de diferentes funções, o seu tipo é definido dentro de type=""</p>
         <h3>abaixo alguns tipos de input:</h3>
         <table>
             <thead>
@@ -149,7 +150,7 @@
                 </tr>
                 <tr>
                     <td>reset</td>
-                    <td>Define um botão para reinicar o preenchimento do formulário</td>
+                    <td>Define um botão para reiniciar o preenchimento do formulário</td>
                 </tr>
                 <tr>
                     <td>search</td>
@@ -182,7 +183,7 @@
             </tbody>
         </table>
         <h3>Algumas das principais Tags Semânticas</h3>
-        <p>Tags semânticas são tags que envolvem elementos e possuem um significado além de dar sentido à informação de texto ao navegador e buscadores mas não alteram a estrutura da página</p>
+        <p>Tags semânticas são tags que envolvem elementos e possuem um significado, além de dar sentido à informação de texto ao navegador e buscadores mas não alteram a estrutura da página</p>
         <p><strong>&ltdiv&gt &lt/div&gt</strong> = Tag genérica, é uma boa prática evitar seu uso</p>
         <p><strong>&ltheader&gt &lt/header&gt</strong> = Tag Semântica que Introduz a página</p>
         <p><strong>&ltnav&gt &lt/nav&gt</strong> = Tag Semântica que abrange as conteúdos de navegação, como links de redirecionamento, botões com hyperlinks, uma próriamente dita barra de navegação, etc</p>
@@ -192,10 +193,11 @@
         <p><strong>&ltaside&gt &lt/aside&gt</strong> = Tag utilizada para identificar a lateral de uma página que se relaciona ao conteúdo principal</p>
         <p><strong>&ltfooter&gt &lt/footer&gt</strong> = Tag que define o rodapé de uma página</p>
         <p><strong>&ltadress&gt &lt/adress&gt</strong> = Tag utilizada para inserir endereços e informações de contato que facilitam a comunicação com os motores de busca</p>
-        <p><strong>&ltarticle&gt &lt/article&gt</strong> = Tag que compreende conteúdo que pode ser reaproveitado, como por exemplo uma manchete. Consiste em um conteúdo que pode ser "reaproveitado" por outra página</p>
+        <p><strong>&ltarticle&gt &lt/article&gt</strong> = Tag que compreende conteúdo que pode ser "reaproveitado" em outro documento, como por exemplo uma manchete</p>
         <p><strong>&ltsection&gt &lt/section&gt</strong> = Tag que delimita seções de um documento</p>
         <p><strong>&ltfigure&gt &lt/figure&gt</strong> = Tag utilizada para compreender uma tag &ltimg&gt</p>
         <p><strong>&ltfigurecaption&gt &lt/figurecaption&gt</strong> = Tag utilizada dentro da tag figure usada para adicionar uma legenda para a imagem</p>
+        <p><strong>&ltscript&gt &lt/script&gt</strong> = Ultilizado na última linha dentro do body para referenciar um arquivo de script, pode receber o atributo type="module" caso esteja usando mais de um arquivo de script</p>
         <!--<p><strong>&lt&gt &lt/&gt</strong> = </p>-->
     </main>
     <div>
