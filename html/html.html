@@ -35,12 +35,38 @@
         <p><strong>&ltlink rel="stylesheet" href="documento.css"/&gt</strong> = Utilizado para definir o documento externo que será utilizado para estilização da página</p>
         <p><strong>&ltstyle&gt &lt/style&gt</strong> = Embora não seja uma boa prática, permite adicionar estilo à página diretamente pelo html (pode ser utilizada no head ou dentro das tags dos elementos html)</p>
         <h2>Principais aplicações dentro do body</h2>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
+        <p><strong>&lth&gt &lt/h&gt</strong> = Utilizado seguido de um índice do 1 ao 6 (exemplo: h1) para inserir uma linha de título na página, o índice numérico vai determinar o tamanho da fonte</p>
+        <p><strong>&ltp&gt &lt/p&gt</strong> = Utilizado para criar um parágrafo na página</p>
+        <p><strong>&lta href="caminho"&gt &lt/a&gt</strong> = Utilizado para criar um link de redirecionamento. Pode ser inserido o atributo target=“_blank” para fazer o link abrir em uma nova guia</p>
+        <h3>Aplicações de detalhes</h3>
+        <p><strong>&ltb&gt &lt/b&gt</strong> = Utilizado para criar um texto em <strong>negrito</strong></p>
+        <p><strong>&ltstrong&gt &lt/strong&gt</strong> = Utilizado para criar um texto em <strong>negrito</strong> identificável por leitores visuais</p>
+        <p><strong>&lti&gt &lt/i&gt</strong> = Utilizado para criar um texto em <i>itálico</i></p>
+        <p><strong>&ltem&gt &lt/em&gt</strong> = Utilizado para criar um texto em <em>itálico</em> identificável por leitores visuais</p>
+        <p><strong>&ltbr&gt</strong> = Utilizado para gerar uma quebra de linha</p>
+        <p><strong>&lthr&gt</strong> = Utilizada para criar uma linha horizontal no documento</p>
+        <p><strong>&ltdialog&gt &lt/dialog&gt</strong> = Utilizada para criar caixas de diálogo</p>
+        <p><strong>&ltdfn&gtpalavra&lt/dfn&gt</strong> = Utilizada para identificar a <dfn>palavra alvo</dfn> no qual uma definição está sendo aplicada com estilização em itálico</p>
+        <p><strong>&ltabbr title="definição da sigla"&gtsigla&lt/abbr&gt</strong> = Utilizada para incorporar a nomenclatura de uma sigla ao passar o cursor por cima (por exemplo a <abbr title="Organização das Nações Unidas">ONU</abbr>)</p>
+        <h3>Aplicações de incorporação de arquivos</h3>
+        <p><strong>&ltimg src="arquivo"/&gt</strong> = Utilizado para inserir imagens ao documento. Pode ser adicionado o elemento alt dentro da tag de abertura para especificar uma mensagem descritiva caso a imagem não carregue</p>
+        <p><strong>&ltvideo src="arquivo"&gt &lt/video&gt</strong> = Utilizado para inserir vídeos ao documento. Pode ser inserido o atributo controls dentro da tag de abertura para adicionar uma barra de controle ao vídeo, alem de diversos outros recursos</p>
+        <p><strong>&ltaudio&gt &lt/audio&gt</strong> = Utilizado para inserir áudios ao documento. Pode ser inserido o atributo autoplay na tag de abertura para reproduzir o áudio assim que a página for recarregada, alem de outros recursos</p>
+        <p><strong>&ltiframe&gt &lt/iframe&gt</strong> = Utilizado para incorporar outro documento à esse documento (um ótimo exemplo seria a incorporação de vídeos do youtube)</p>
+        <h3>Aplicações de lista</h3>
+        <p><strong>&ltul&gt &lt/ul&gt</strong> = Utilizada para criar uma lista não ordenada</p>
+        <p><strong>&ltol&gt &lt/ol&gt</strong> = Utilizada para criar uma lista ordenada</p>
+        <p><strong>&ltli&gt &lt/li&gt</strong> = Utilizado dentro de uma lista para criar um novo item da mesma</p>
+        <h3>Aplicações de tabelas</h3>
+        <p><strong>&ltthead&gt &lt/thead&gt</strong> = Utilizada para criar o cabeçalho de uma tabela</p>
+        <p><strong>&lttr&gt &lt/tr&gt</strong> = Utilizada para criar linhas dentro de uma tabela</p>
+        <p><strong>&ltth&gt &lt/th&gt</strong> = Utilizada para criar uma célula dentro do cabeçalho de uma tabela (pode ser utilizado td porém th é mais indicada por questões semânticas)</p>
+        <p><strong>&lttbody&gt &lt/tbody&gt</strong> = Utilizada para criar o corpo de uma tabela</p>
+        <p><strong>&lttd&gt &lt/td&gt</strong> = Utilizada para criar uma célula dentro do corpo de uma tabela</p>
+        <p><strong>&lttfoot&gt &lt/tfoot&gt</strong> = Utilizada para criar o rodapé de uma tabela</p>
+        <p><strong>&ltcaption&gt &lt/caption&gt</strong> = Utilizada para agregar uma legenda para a tabela, podendo ser utilizada no cabeçalho e no rodapé</p>
+        <p>Curiosidade: as tags th e td podem receber os atributos rowspan e colspan seguidos de um índice numérico dentro da tag de abertura para especificar que a célula preencherá mais de um espaço na tabela, sendo colspan para linhas horizontais e rowspan para linhas verticais (exemplo de estruturação: &lttd colspan="5"&gt)</p>
+        <h3>Itens de formulário</h3>
         <p><strong>&lt&gt &lt/&gt</strong> = </p>
     </main>
     <div>
