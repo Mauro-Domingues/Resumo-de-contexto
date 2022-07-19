@@ -12,10 +12,14 @@ body {
     cursor: default;
 }
 
-a{
+a, abbr{
     text-decoration: none;
     color: #0000ff;
     cursor: pointer;
+}
+
+abbr{
+    color: #d400ff;
 }
 
 strong{
