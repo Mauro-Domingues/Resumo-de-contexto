@@ -27,6 +27,11 @@ abbr{
 
 strong{
     font-size: 1.1rem;
+    color: #ffffe1;
+}
+
+h2, h3 {
+    color: #ffffe1;
 }
 
 input#main-button{
