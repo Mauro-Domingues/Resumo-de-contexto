@@ -19,7 +19,10 @@ a, abbr{
 }
 
 abbr{
+    text-decoration: none;
     color: #d400ff;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 strong{
