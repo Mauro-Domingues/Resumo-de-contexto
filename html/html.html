@@ -26,6 +26,7 @@
         <p><strong>&lthtml lang="pt-bt"&gt &lthtml/&gt</strong> = Tag principal, ela marca o início e o final do documento, pode ser atrelada ao atributo "lang" para indicar o idioma do documento</p>
         <p><strong>&lthead&gt &lthead/&gt</strong> = Tag usada para delimitar o cabeçalho do documento. Dentro dela outras tags de cabeçalho serão usadas, como o title, meta, link, entre outros e deve ser utilizada dentro da tag html</p>
         <p><strong>&ltbody&gt &ltbody/&gt</strong> = Tag usada para definir o corpo do documento. Dentro dela serão colocadas as tags que irão compor a nossa página e deve ser utilizada dentro da tag html</p>
+        <p>Todos os elementos podem receber classes e IDs com class="" e id="" dentro da tag de abertura</p>
         <h2>Principais aplicações dentro do head</h2>   
         <p><strong>&ltmeta charset/&gt</strong> = Utilizado para definir a linguagem de codificação da página</p>
         <p><strong>&ltmeta http-equiv="X-UA-Compatible" content="IE-edge"/&gt</strong> = Utilizada para configurar a página para ser renderizada em outra versão do Internet Explorer, o valor IE=edge vai forçar o navegador renderizar com a mais recente</p>
@@ -39,6 +40,7 @@
         <p><strong>&ltp&gt &lt/p&gt</strong> = Utilizado para criar um parágrafo na página</p>
         <p><strong>&lta href="caminho"&gt &lt/a&gt</strong> = Utilizado para criar um link de redirecionamento. Pode ser inserido o atributo target=“_blank” para fazer o link abrir em uma nova guia</p>
         <p><strong>&ltbutton&gt &lt/button&gt</strong> = Utilizado para criar um botão, pode ser atribuído uma função com o atributo type="" dentro da tag de abertura</p>
+        <p><strong>&lt!-- comentário --&gt</strong> = Utilizada para adicionar um comentário que não será interpretado e nem renderizado pelo codigo</p>
         <h3>Aplicações de detalhes</h3>
         <p><strong>&ltb&gt &lt/b&gt</strong> = Utilizado para criar um texto em <strong>negrito</strong></p>
         <p><strong>&ltstrong&gt &lt/strong&gt</strong> = Utilizado para criar um texto em <strong>negrito</strong> identificável por leitores visuais</p>
@@ -71,6 +73,13 @@
         <p>Curiosidade: as tags th e td podem receber os atributos rowspan e colspan seguidos de um índice numérico dentro da tag de abertura para especificar que a célula preencherá mais de um espaço na tabela, sendo colspan para linhas horizontais e rowspan para linhas verticais (exemplo de estruturação: &lttd colspan="5"&gt)</p>
         <h3>Itens de formulário</h3>
         <p><strong>&ltform&gt &lt/form&gt</strong> = Utilizada para a criação de um formulário</p>
+        <p><strong>&ltfieldset&gt &lt/fieldset&gt</strong> = É usada para agrupar elementos relacionados dentro de um formulário</p>
+        <p><strong>&ltlegend&gt &lt/legend&gt</strong> = É utilizada para definir o título de um fieldset</p>
+        <p><strong>&ltselect&gt &lt/select&gt</strong> = É usada para criar menus ou listas de opções</p>
+        <p><strong>&ltoptgroup&gt &lt/optgroup&gt</strong> = É usado para criar um agrupamento de opções dentro do elemento select</p>
+        <p><strong>&ltdatalist&gt &lt/datalist&gt</strong> = Contém um conjunto de elementos option que representam as opções possíveis para o valor de outros controles</p>
+        <p><strong>&ltoption&gt &lt/option&gt</strong> = É usado para criar um controle que representa um item dentro de um elemento</p>
+        <p><strong>&lttextarea&gt &lt/textarea&gt</strong> = É usada para definir um multi-linha de controle de entrada de texto, pode receber os atributos rows (linhas) e cols (colunas) para delimitar seu tamanho</p>
         <p><strong>&ltlabel for="ID"&gt &lt/label&gt</strong> = Utilizada para criar etiquetas aos inputs</p>
         <p><strong>&ltinput type="tipo" name=""&gt &lt/input&gt</strong> = Utilizada para adicionar caixas diverentes funções, o seu tipo é definido dentro de type=""</p>
         <h3>abaixo alguns tipos de input:</h3>
@@ -173,12 +182,21 @@
             </tbody>
         </table>
         <h3>Algumas das principais Tags Semânticas</h3>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
-        <p><strong>&lt&gt &lt/&gt</strong> = </p>
+        <p>Tags semânticas são tags que envolvem elementos e possuem um significado além de dar sentido à informação de texto ao navegador e buscadores mas não alteram a estrutura da página</p>
+        <p><strong>&ltdiv&gt &lt/div&gt</strong> = Tag genérica, é uma boa prática evitar seu uso</p>
+        <p><strong>&ltheader&gt &lt/header&gt</strong> = Tag Semântica que Introduz a página</p>
+        <p><strong>&ltnav&gt &lt/nav&gt</strong> = Tag Semântica que abrange as conteúdos de navegação, como links de redirecionamento, botões com hyperlinks, uma próriamente dita barra de navegação, etc</p>
+        <p><strong>&ltmain&gt &lt/main&gt</strong> = Tag que identifica o conteúdo principal da página, só pode haver uma única main em cada página</p>
+        <p><strong>&ltdetails&gt &lt/details&gt</strong> = Tag relacionada a main que especifica detalhes adicionais que podem serabertos ou fechados se requisitado</p>
+        <p><strong>&ltcode&gt &lt/code&gt</strong> = Tag utilizada para definir um pedaço de código que é interpretado pelo computador</p>
+        <p><strong>&ltaside&gt &lt/aside&gt</strong> = Tag utilizada para identificar a lateral de uma página que se relaciona ao conteúdo principal</p>
+        <p><strong>&ltfooter&gt &lt/footer&gt</strong> = Tag que define o rodapé de uma página</p>
+        <p><strong>&ltadress&gt &lt/adress&gt</strong> = Tag utilizada para inserir endereços e informações de contato que facilitam a comunicação com os motores de busca</p>
+        <p><strong>&ltarticle&gt &lt/article&gt</strong> = Tag que compreende conteúdo que pode ser reaproveitado, como por exemplo uma manchete. Consiste em um conteúdo que pode ser "reaproveitado" por outra página</p>
+        <p><strong>&ltsection&gt &lt/section&gt</strong> = Tag que delimita seções de um documento</p>
+        <p><strong>&ltfigure&gt &lt/figure&gt</strong> = Tag utilizada para compreender uma tag &ltimg&gt</p>
+        <p><strong>&ltfigurecaption&gt &lt/figurecaption&gt</strong> = Tag utilizada dentro da tag figure usada para adicionar uma legenda para a imagem</p>
+        <!--<p><strong>&lt&gt &lt/&gt</strong> = </p>-->
     </main>
     <div>
         Página em construção
