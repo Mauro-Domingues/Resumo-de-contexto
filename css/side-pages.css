@@ -57,6 +57,25 @@ input#main-button:active{
     box-shadow: none;
 }
 
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+}
+
+table * {
+    border: 1px solid #fffff0;
+    padding: 10px;
+}
+
+th{
+    font-weight: bold;
+}
+
+.th-type{
+    width: 25%;;
+}
+
 @media (max-width: 630px){
     html,
     body {
