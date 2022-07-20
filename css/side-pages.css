@@ -12,6 +12,15 @@ body {
     cursor: default;
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    max-width: 900px;
+}
+
 a, abbr{
     text-decoration: none;
     color: #0000ff;
@@ -84,6 +93,6 @@ th{
 @media (max-width: 630px){
     html,
     body {
-    margin: 10px 10px 15px 10px;
+        margin: 10px 10px 15px 10px;
     }
 }
