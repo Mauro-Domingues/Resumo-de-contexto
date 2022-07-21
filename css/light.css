@@ -29,7 +29,8 @@ h3.main {
 
 main.main {
     background-color: #555555;
-    border: 1px solid #222222;
+    border: 1px solid #333333;
+    box-shadow: 0 0 10px #333333;
 }
 
 .card {
