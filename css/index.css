@@ -6,8 +6,6 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-align: center;
-    background-color: #333333;
-    color: #fffff0;
     margin: 0;
     max-width: 90%;
     padding: 0 5% 2% 5%;
@@ -24,7 +22,6 @@ body {
 }
 
 header {
-    background-color: #333333;
     padding: 10px 0 20px 0;
     border-radius: 50px;
 }
@@ -34,8 +31,6 @@ header * {
 }
 
 main {
-    background-color: #444444;
-    border: 1px solid #fffff0;
     padding: 5% 0;
     border-radius: 30px;
     width: 90%;
@@ -66,16 +61,12 @@ a {
     position: relative;
     flex-direction: column;
     cursor: pointer;
-    border: 1px solid #fffff0;
-    box-shadow: 0 0 5px #fffff0;
     transition: all 0.3s ease 0s;
     border-radius: 10px;
-    background-color: #333333;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #fffff0;
 }
 
 .card:active {
@@ -90,7 +81,6 @@ figure {
     overflow: hidden;
     position: relative;
     border-radius: 10px 10px 0 0;
-    background-color: #ffffff;
 }
 
 figure img {
@@ -103,7 +93,6 @@ figure img {
 
 .content {
     margin: 5px 15px 15px 15px;
-    color: #fffff0;
 }
 
 @media (max-width: 631px) {

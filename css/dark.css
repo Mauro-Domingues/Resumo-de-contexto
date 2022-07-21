@@ -1,0 +1,64 @@
+/* index */
+
+html,
+body {
+    background-color: #333333;
+    color: #fffff0;
+}
+
+h3.main {
+    color: #fffff0;
+}
+
+main.main {
+    background-color: #444444;
+    border: 1px solid #fffff0;
+}
+
+.card {
+    background-color: #333333;
+    border: 1px solid #fffff0;
+    box-shadow: 0 0 5px #fffff0;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #fffff0;
+}
+
+figure {
+    background-color: #ffffff;
+}
+
+.content {
+    color: #fffff0;
+}
+
+/* side-pages */
+
+a {
+    color: #3e66ff;
+}
+
+abbr {
+    color: #d400ef;
+}
+
+strong {
+    color: #ffffe5;
+}
+
+h2,
+h3 {
+    color: #ffffe3
+}
+
+input#main-button {
+    background-color: #fffff0;
+    color: #222222;
+    border: 2px solid #333333;
+    box-shadow: 0 0 3px #fffff0;
+}
+
+table * {
+    border: 1px solid #fffff0
+}
