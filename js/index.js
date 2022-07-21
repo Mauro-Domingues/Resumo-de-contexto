@@ -5,7 +5,7 @@ const styleMain = document.head.getElementsByTagName('link');
 switcher.addEventListener('change', () => {
     if(switcher.checked) {
         //style.href = "../css/dark.css"; 
-        styleMain[1].href = "./css/dark.css" // indice certo é [2]
+        styleMain[1].href = "./css/dark.css"
         console.log("checked")
     } else {
         //style.herf = "../css/light.css";
