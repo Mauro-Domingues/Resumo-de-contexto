@@ -1,16 +1,15 @@
 const switcher = document.querySelector(".switcher");
-const style = document.querySelectorAll(".style");
-const styleMain = document.querySelector(".style-main")
+//const style = document.head.getElementsByTagName('link');
+const styleMain = document.head.getElementsByTagName('link');
 
 switcher.addEventListener('change', () => {
     if(switcher.checked) {
-        style.src = "../css/dark.css";
-        styleMain.src = "./css/dark.css"
+        //style.href = "../css/dark.css"; 
+        styleMain[1].href = "./css/dark.css" // indice certo é [2]
         console.log("checked")
     } else {
-        style.src = "./css/light.css";
-        styleMain.src = "./css/light.css"
+        //style.herf = "../css/light.css";
+        styleMain[1].href = "./css/light.css"
         console.log("not checked")
     }
 });
-
