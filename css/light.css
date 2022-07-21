@@ -1,0 +1,72 @@
+/* index */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+html,
+body {
+    font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;  
+    background-color: #fffff9;
+    color: #000000;
+    text-shadow: 0 0 1px #000000;
+}
+
+
+
+h3.main {
+    color: #222222;
+}
+
+main.main {
+    background-color: #555555;
+    border: 1px solid #222222;
+}
+
+.card {
+    background-color: #333333;
+    border: 1px solid #fffff0;
+    box-shadow: 0 0 5px #fffff0;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #fffff0;
+}
+
+figure {
+    background-color: #ffffff;
+}
+
+.content {
+    color: #fffff0;
+}
+
+/* side-pages */
+
+a {
+    color: #3e66ff;
+}
+
+abbr {
+    color: #d400ef;
+}
+
+strong {
+    color: #222222;
+}
+
+h2,
+h3 {
+    color: #000000
+}
+
+input#main-button {
+    background-color: #222222;
+    color: #fffff0;
+    border: 2px solid #fffff0;
+    box-shadow: 0 0 3px #333333;
+}
+
+table * {
+    border: 1px solid #333333
+}
