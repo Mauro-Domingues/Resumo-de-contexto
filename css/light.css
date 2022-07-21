@@ -6,13 +6,22 @@ html,
 body {
     font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;  
+    -webkit-font-smoothing: antialiased;
     background-color: #fffff9;
     color: #000000;
     text-shadow: 0 0 1px #000000;
 }
 
+.switcher-body {
+    background-color: #fffff0;
+    border: 1px solid #333333;
+    box-shadow: 0 0 5px #333333;
+}
 
+.switcher-pointer {
+    background-color: #333333;
+    border: 1px solid #fffff0;
+}
 
 h3.main {
     color: #222222;
