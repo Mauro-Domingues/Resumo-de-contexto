@@ -12,14 +12,14 @@ body {
 }
 
 .switcher-body {
-    background-color: #fffff0;
+    background-color: #ffffff;
     border: 1px solid #fffff0;
     box-shadow: 0 0 5px #fffff0;
 }
 
 .switcher-pointer {
     background-color: #333333;
-    border: 1px solid #fffff0;
+    border: 1px solid #ffffff;
 }
 
 h3.main {
